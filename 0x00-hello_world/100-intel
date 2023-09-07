@@ -1,17 +1,2 @@
 #!/bin/bash
-
-# Check if $CFILE is set
-if [ -z "$CFILE" ]; then
-  echo "Error: The variable \$CFILE is not set."
-  exit 1
-fi
-
-# Generate assembly code in Intel syntax and save it to .s file
 gcc -S -masm=intel "$CFILE" -o "${CFILE%.c}.s"
-
-# Check if assembly code generation was successful
-if [ $? -eq 0 ]; then
-  echo "Assembly code generated successfully and saved in '${CFILE%.c}.s'."
-else
-  echo "Error: Assembly code generation failed."
-fi
