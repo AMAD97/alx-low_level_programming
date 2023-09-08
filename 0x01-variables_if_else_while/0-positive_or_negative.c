@@ -9,11 +9,14 @@
  */
 int main(void)
 {
+    /* Declare the variable at the beginning of the block */
+    int n;
+
     /* Seed the random number generator */
     srand(time(NULL));
 
     /* Generate a random number between INT_MIN and INT_MAX */
-    int n = rand();
+    n = rand();
 
     /* Check if n is positive, negative, or zero */
     printf("The number %d is ", n);
