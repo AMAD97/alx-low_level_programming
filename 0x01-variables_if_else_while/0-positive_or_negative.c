@@ -9,8 +9,7 @@
  */
 int main(void)
 {
-    /* Declare the variable at the beginning of the block */
-    int n;
+    int n; /* Declare the variable at the beginning of the block */
 
     /* Seed the random number generator */
     srand(time(NULL));
@@ -19,18 +18,18 @@ int main(void)
     n = rand();
 
     /* Check if n is positive, negative, or zero */
-    printf("The number %d is ", n);
+    printf("The number %d ", n);
     if (n > 0)
     {
-        printf("positive\n");
+        printf("is positive\n");
     }
     else if (n < 0)
     {
-        printf("negative\n");
+        printf("is negative\n");
     }
     else
     {
-        printf("zero\n");
+        printf("is zero\n");
     }
 
     return (0);
