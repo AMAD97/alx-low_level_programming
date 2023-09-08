@@ -9,29 +9,29 @@
  */
 int main(void)
 {
-    int n; /* Declare the variable at the beginning of the block */
+int n; /* Declare the variable at the beginning of the block */
 
-    /* Seed the random number generator */
-    srand(time(NULL));
+/* Seed the random number generator */
+srand(time(NULL));
 
-    /* Generate a random number between INT_MIN and INT_MAX */
-    n = rand();
+/* Generate a random number between -100 and 100 (inclusive) */
+n = (rand() % 201) - 100;
 
-    /* Check if n is positive, negative, or zero */
-    printf("The number %d ", n);
-    if (n > 0)
-    {
-        printf("is positive\n");
-    }
-    else if (n < 0)
-    {
-        printf("is negative\n");
-    }
-    else
-    {
-        printf("is zero\n");
-    }
+/* Check if n is positive, negative, or zero */
+printf("%d is ", n);
+if (n > 0)
+{
+printf("positive\n");
+}
+else if (n < 0)
+{
+printf("negative\n");
+}
+else
+{
+printf("zero\n");
+}
 
-    return (0);
+return (0);
 }
 
