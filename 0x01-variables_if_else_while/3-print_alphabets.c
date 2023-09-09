@@ -1,4 +1,4 @@
-#iclude <stdio.h>
+ #include <stdio.h>
 /**
  * main - main function
  *
@@ -18,7 +18,7 @@ int main(void)
 		putchar(l);
 		l++;
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
 	
