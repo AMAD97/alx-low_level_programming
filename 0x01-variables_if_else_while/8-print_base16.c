@@ -3,6 +3,7 @@
 /**
  * main - main function
  * this function print all the numbers of base 16, and return to 0
+ * Return: 0 always
  */
 
 int main(void)
