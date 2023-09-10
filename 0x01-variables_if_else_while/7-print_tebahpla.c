@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- *
  * main - main function
+ * this function print the englidh alphabet in revrse order and return to 0
  *
  * Return: always 0
  */
