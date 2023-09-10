@@ -2,7 +2,7 @@
 
 /**
  * main - main function
- * this function should print all possible different combinations of two digits.
+ * this function prints all possible different combinations of two digits
  * Return: 0 always
  */
 
@@ -10,7 +10,7 @@ int main(void)
 {
 	int i, j;
 
-	for (i = 0; i <=8; i++)
+	for (i = 0; i <= 8; i++)
 	{
 		for (j = i + 1; j <= 9; j++)
 		{
