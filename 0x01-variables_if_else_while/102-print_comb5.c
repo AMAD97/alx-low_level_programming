@@ -9,6 +9,7 @@
 int main(void)
 {
 	int i1, i2, j1, j2;
+
 	for (i1 = 0; i1 <= 9; i1++)
 	{
 		for (i2 = 0; i2 <= 9; i2++)
@@ -32,6 +33,7 @@ int main(void)
 			}
 		}
 	}
+
 	putchar('\n');
 	return (0);
 }
