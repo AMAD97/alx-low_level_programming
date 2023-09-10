@@ -16,20 +16,20 @@ int main(void)
 		{
 			for (j1 = i1; j1 <= 9; j1++)
 			{
-			    for (j2 = (j1 == i1) ? i2 + 1 : 0; j2 <= 9; j2++)
-			    {
-				putchar(i1 + '0');
-				putchar(i2 + '0');
-				putchar(' ');
-				putchar(j1 + '0');
-				putchar(j2 + '0');
+			        for (j2 = (j1 == i1) ? i2 + 1 : 0; j2 <= 9; j2++)
+			        {
+				    putchar(i1 + '0');
+				    putchar(i2 + '0');
+				    putchar(' ');
+				    putchar(j1 + '0');
+				    putchar(j2 + '0');
 
-				if (!(i1 == 9 && i2 == 8 && j1 == 9 && j2 ==9))
-				{
+				    if (!(i1 == 9 && i2 == 8 && j1 == 9 && j2 == 9))
+				    {
 					putchar(',');
 					putchar(' ');
+				    }
 				}
-			    }
 			}
 		}
 	}
