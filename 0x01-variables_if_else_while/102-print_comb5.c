@@ -6,6 +6,7 @@
  * of two two-digit numbers.
  * Return: always 0
  */
+
 int main(void)
 {
 	int i1, i2, j1, j2;
@@ -26,8 +27,8 @@ int main(void)
 
 				    if (!(i1 == 9 && i2 == 8 && j1 == 9 && j2 == 9))
 				    {
-					putchar(',');
-					putchar(' ');
+			                  putchar(',');
+					  putchar(' ');
 				    }
 				}
 			}
