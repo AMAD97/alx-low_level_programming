@@ -1,21 +1,24 @@
 #include "main.h"
 
 /**
- * main - print  _putchar
- * nut use printf
- * Return: 0
+ * main - Entry point
+ *
+ * Description: Prints "_putchar" using the int_putchar function.
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
-	return (0);
+    int_putchar('_');
+    int_putchar('p');
+    int_putchar('u');
+    int_putchar('t');
+    int_putchar('c');
+    int_putchar('h');
+    int_putchar('a');
+    int_putchar('r');
+    int_putchar('\n');
+
+    return (0);
 }
