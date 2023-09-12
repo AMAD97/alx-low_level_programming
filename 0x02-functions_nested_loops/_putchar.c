@@ -8,7 +8,7 @@
  *   Return: On success 1
  *   On error, -1 is returned, abd erno is set appropriatelly.
  *   */
-int _putchar(char c)
+int int_putchar(char c)
 {
 	return write(1, &c, 1);
 }
