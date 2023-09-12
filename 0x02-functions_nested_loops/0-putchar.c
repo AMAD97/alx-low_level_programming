@@ -1,24 +1,20 @@
 #include "main.h"
-
 /**
- * main - Entry point
- *
- * Description: Prints "_putchar" using the int_putchar function.
- *
- * Return: Always 0 (Success)
+ * main - print _putchar
+ * is written by mbah
+ * Return: 0
  */
 
 int main(void)
 {
-    int_putchar('_');
-    int_putchar('p');
-    int_putchar('u');
-    int_putchar('t');
-    int_putchar('c');
-    int_putchar('h');
-    int_putchar('a');
-    int_putchar('r');
-    int_putchar('\n');
-
-    return (0);
+_putchar('_');
+_putchar('p');
+_putchar('u');
+_putchar('t');
+_putchar('c');
+_putchar('h');
+_putchar('a');
+_putchar('r');
+_putchar('\n');
+return (0);
 }
