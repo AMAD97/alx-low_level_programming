@@ -1,10 +1,8 @@
 #include "main.h"
 
 /**
- * print _diagonal - draws a diagonal
- * line on the terminal
- * @n: number of times the character \
- * should be printed
+ * print_diagonal - Print a diagonal line of backslashes
+ * @n: The number of backslashes to print
  */
 void print_diagonal(int n)
 {
@@ -15,6 +13,7 @@ void print_diagonal(int n)
     else
     {
         int i, j;
+
         for (i = 0; i < n; i++)
         {
             for (j = 0; j < n; j++)
@@ -24,7 +23,7 @@ void print_diagonal(int n)
                 else if (j < i)
                     _putchar(' ');
             }
-            _putchar('\n'); /* The diagonal should end with a \n */
+            _putchar('\n');
         }
     }
 }
