@@ -28,5 +28,5 @@ else
 {
 largest = c;
 }
-return (largest);// Return statment 
+return (largest);/* largest number among a, b, and c */ 
 }
