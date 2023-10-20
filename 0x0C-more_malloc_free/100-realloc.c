@@ -1,5 +1,19 @@
 #include <stdlib.h>
 
+/**
+ * _realloc - Reallocate memory for a block of memory.
+ *
+ * @ptr: Pointer to the previously allocated memory block.
+ * @old_size: The size of the original memory block.
+ * @new_size: The size of the desired new memory block.
+ *
+ * Description:
+ * This function reallocates memory for a block of memory
+ *
+ * * Return:
+ * - On success: A pointer to the newly allocated memory block.
+ * - On failure: NULL if `malloc` fails or if `new_size` is 0.
+ */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	void *new_ptr;
