@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 /**
  * is_palindrome - Check if a string is a palindrome
@@ -8,25 +9,19 @@
  */
 int is_palindrome(char *s)
 {
-	int len = 0;
-
-	/** Find the length of the string */
-	while (s[len] != '\0')
-		len++;
+	int len = strlen(s);
+	int i;
 
 	/** Base case: an empty string or a single character is a palindrome */
 	if (len <= 1)
 		return (1);
 
 	/** Compare the first and last characters */
-	if (s[0] == s[len - 1])
+	for (i = 0; i < len / 2; i++)
 	{
-		/** Recursively check the substring without the first and last characters */
-		return (is_palindrome(s + 1));
+		if (s[i] != s[len - 1 - i])
+			return (0);
 	}
-	else
-	{
-		/** If the first and last characters don't match, it's not a palindrome */
-		return (0);
-	}
+
+	return (1);
 }
